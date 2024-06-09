@@ -1,0 +1,30 @@
+.thumb-up {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    animation: thumbUpAnimation 2s forwards, fadeOutAnimation 2s 2s forwards;
+    color: yellow;
+  }
+  
+  @keyframes thumbUpAnimation {
+    from {
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: translate(-50%, -50%) scale(6);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOutAnimation {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
